@@ -1,13 +1,20 @@
-package org.college;
+package universityAssignment;
 
-public class College {
-	public void collegeName() {
-		System.out.println("sathyabama");
+
+
+public class College extends University {
+
+	@Override
+	public void ug() {
+		System.out.println("UG was unimplemented method ");	
 	}
-	public void collegeCode() {
-		System.out.println("577");
+public static void main(String[] args) {
+		
+College info1 = new College();
+
+info1.pg();
+info1.ug();
+
+
 	}
-	public void collegeRank() {
-	System.out.println("27");
-}
 }
